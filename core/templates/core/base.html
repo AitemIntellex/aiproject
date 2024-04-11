@@ -1,0 +1,33 @@
+<!-- core/templates/core/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'core:home' %}">Home</a></li>
+                <li><a href="{% url 'core:news' %}">News</a></li>
+                <li><a href="{% url 'core:interesting' %}">Interesting</a></li>
+                <li><a href="{% url 'core:team' %}">Team</a></li>
+                <li><a href="{% url 'core:events' %}">Events</a></li>
+                <li><a href="{% url 'core:blog' %}">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Copyright © 2024</p>
+    </footer>
+</body>
+
+</html>

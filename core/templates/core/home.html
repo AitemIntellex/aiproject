@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <h1>Добро пожаловать на наш сайт!</h1>
+
+    <h2>Последние новости</h2>
+    <ul>
+        {% for news in latest_news %}
+        <li>{{ news.title }} - {{ news.published_date }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Интересные статьи</h2>
+    <ul>
+        {% for page in latest_interesting %}
+        <li>{{ page.title }} - {{ page.published_date }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Наша команда</h2>
+    <ul>
+        {% for member in latest_team %}
+        <li>{{ member.name }} - {{ member.role }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Предстоящие события</h2>
+    <ul>
+        {% for event in latest_event %}
+        <li>{{ event.name }} - {{ event.date }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Последние посты в блоге</h2>
+    <ul>
+        {% for blog in latest_blog %}
+        <li>{{ blog.title }} - {{ blog.published_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
