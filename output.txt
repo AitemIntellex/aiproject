@@ -1,0 +1,1489 @@
+Ñòðóêòóðà ïàïîê
+Ñåðèéíûé íîìåð òîìà: F6BF-8BEA
+D:.
+¦   .env
+¦   .gitignore
+¦   manage.py
+¦   output.txt
+¦   package-lock.json
+¦   package.json
+¦   
++---aiproject
+¦   ¦   asgi.py
+¦   ¦   settings.py
+¦   ¦   urls.py
+¦   ¦   wsgi.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   L---__pycache__
+¦           settings.cpython-312.pyc
+¦           urls.cpython-312.pyc
+¦           wsgi.cpython-312.pyc
+¦           __init__.cpython-312.pyc
+¦           
++---core
+¦   ¦   admin.py
+¦   ¦   apps.py
+¦   ¦   models.py
+¦   ¦   tests.py
+¦   ¦   urls.py
+¦   ¦   views.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---migrations
+¦   ¦   ¦   0001_initial.py
+¦   ¦   ¦   0002_event_imageslider_tag_teammember_blogpost.py
+¦   ¦   ¦   0003_alter_blogpost_published_date_alter_blogpost_title.py
+¦   ¦   ¦   __init__.py
+¦   ¦   ¦   
+¦   ¦   L---__pycache__
+¦   ¦           0001_initial.cpython-312.pyc
+¦   ¦           0002_event_imageslider_tag_teammember_blogpost.cpython-312.pyc
+¦   ¦           0003_alter_blogpost_published_date_alter_blogpost_title.cpython-312.pyc
+¦   ¦           __init__.cpython-312.pyc
+¦   ¦           
+¦   +---templates
+¦   ¦   L---core
+¦   ¦           base.html
+¦   ¦           blogpost.html
+¦   ¦           event.html
+¦   ¦           home.html
+¦   ¦           index.html
+¦   ¦           interesting.html
+¦   ¦           news.html
+¦   ¦           team.html
+¦   ¦           
+¦   L---__pycache__
+¦           admin.cpython-312.pyc
+¦           apps.cpython-312.pyc
+¦           models.cpython-312.pyc
+¦           urls.cpython-312.pyc
+¦           views.cpython-312.pyc
+¦           __init__.cpython-312.pyc
+¦           
++---node_modules
+¦   ¦   .package-lock.json
+¦   ¦   
+¦   +---foundation-sites
+¦   ¦   ¦   .sonarcloud.properties
+¦   ¦   ¦   code-of-conduct.md
+¦   ¦   ¦   CONTRIBUTING.md
+¦   ¦   ¦   gulpfile.js
+¦   ¦   ¦   LICENSE
+¦   ¦   ¦   meteor-README.md
+¦   ¦   ¦   package.json
+¦   ¦   ¦   package.nuspec
+¦   ¦   ¦   README.md
+¦   ¦   ¦   rollup.config.js
+¦   ¦   ¦   SECURITY.md
+¦   ¦   ¦   
+¦   ¦   +---.husky
+¦   ¦   ¦       commit-msg
+¦   ¦   ¦       husky-commit-lint.js
+¦   ¦   ¦       husky-commit-test.js
+¦   ¦   ¦       husky-push-test.js
+¦   ¦   ¦       pre-push
+¦   ¦   ¦       
+¦   ¦   +---assets
+¦   ¦   ¦       foundation-float.scss
+¦   ¦   ¦       foundation-prototype.scss
+¦   ¦   ¦       foundation-rtl.scss
+¦   ¦   ¦       foundation.scss
+¦   ¦   ¦       
+¦   ¦   +---customizer
+¦   ¦   ¦   ¦   complete.json
+¦   ¦   ¦   ¦   config.yml
+¦   ¦   ¦   ¦   essential.json
+¦   ¦   ¦   ¦   index.html
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   L---lib
+¦   ¦   ¦           index.js
+¦   ¦   ¦           js.js
+¦   ¦   ¦           sass.js
+¦   ¦   ¦           
+¦   ¦   +---dist
+¦   ¦   ¦   +---css
+¦   ¦   ¦   ¦       foundation-float.css
+¦   ¦   ¦   ¦       foundation-float.css.map
+¦   ¦   ¦   ¦       foundation-float.min.css
+¦   ¦   ¦   ¦       foundation-float.min.css.map
+¦   ¦   ¦   ¦       foundation-prototype.css
+¦   ¦   ¦   ¦       foundation-prototype.css.map
+¦   ¦   ¦   ¦       foundation-prototype.min.css
+¦   ¦   ¦   ¦       foundation-prototype.min.css.map
+¦   ¦   ¦   ¦       foundation-rtl.css
+¦   ¦   ¦   ¦       foundation-rtl.css.map
+¦   ¦   ¦   ¦       foundation-rtl.min.css
+¦   ¦   ¦   ¦       foundation-rtl.min.css.map
+¦   ¦   ¦   ¦       foundation.css
+¦   ¦   ¦   ¦       foundation.css.map
+¦   ¦   ¦   ¦       foundation.min.css
+¦   ¦   ¦   ¦       foundation.min.css.map
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   L---js
+¦   ¦   ¦       ¦   foundation.cjs.js
+¦   ¦   ¦       ¦   foundation.cjs.js.map
+¦   ¦   ¦       ¦   foundation.d.ts
+¦   ¦   ¦       ¦   foundation.es6.js
+¦   ¦   ¦       ¦   foundation.es6.js.map
+¦   ¦   ¦       ¦   foundation.esm.js
+¦   ¦   ¦       ¦   foundation.esm.js.map
+¦   ¦   ¦       ¦   foundation.js
+¦   ¦   ¦       ¦   foundation.js.map
+¦   ¦   ¦       ¦   foundation.min.js
+¦   ¦   ¦       ¦   foundation.min.js.map
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       L---plugins
+¦   ¦   ¦               foundation.abide.js
+¦   ¦   ¦               foundation.abide.js.map
+¦   ¦   ¦               foundation.abide.min.js
+¦   ¦   ¦               foundation.abide.min.js.map
+¦   ¦   ¦               foundation.accordion.js
+¦   ¦   ¦               foundation.accordion.js.map
+¦   ¦   ¦               foundation.accordion.min.js
+¦   ¦   ¦               foundation.accordion.min.js.map
+¦   ¦   ¦               foundation.accordionMenu.js
+¦   ¦   ¦               foundation.accordionMenu.js.map
+¦   ¦   ¦               foundation.accordionMenu.min.js
+¦   ¦   ¦               foundation.accordionMenu.min.js.map
+¦   ¦   ¦               foundation.core.js
+¦   ¦   ¦               foundation.core.js.map
+¦   ¦   ¦               foundation.core.min.js
+¦   ¦   ¦               foundation.core.min.js.map
+¦   ¦   ¦               foundation.drilldown.js
+¦   ¦   ¦               foundation.drilldown.js.map
+¦   ¦   ¦               foundation.drilldown.min.js
+¦   ¦   ¦               foundation.drilldown.min.js.map
+¦   ¦   ¦               foundation.dropdown.js
+¦   ¦   ¦               foundation.dropdown.js.map
+¦   ¦   ¦               foundation.dropdown.min.js
+¦   ¦   ¦               foundation.dropdown.min.js.map
+¦   ¦   ¦               foundation.dropdownMenu.js
+¦   ¦   ¦               foundation.dropdownMenu.js.map
+¦   ¦   ¦               foundation.dropdownMenu.min.js
+¦   ¦   ¦               foundation.dropdownMenu.min.js.map
+¦   ¦   ¦               foundation.equalizer.js
+¦   ¦   ¦               foundation.equalizer.js.map
+¦   ¦   ¦               foundation.equalizer.min.js
+¦   ¦   ¦               foundation.equalizer.min.js.map
+¦   ¦   ¦               foundation.interchange.js
+¦   ¦   ¦               foundation.interchange.js.map
+¦   ¦   ¦               foundation.interchange.min.js
+¦   ¦   ¦               foundation.interchange.min.js.map
+¦   ¦   ¦               foundation.magellan.js
+¦   ¦   ¦               foundation.magellan.js.map
+¦   ¦   ¦               foundation.magellan.min.js
+¦   ¦   ¦               foundation.magellan.min.js.map
+¦   ¦   ¦               foundation.offcanvas.js
+¦   ¦   ¦               foundation.offcanvas.js.map
+¦   ¦   ¦               foundation.offcanvas.min.js
+¦   ¦   ¦               foundation.offcanvas.min.js.map
+¦   ¦   ¦               foundation.orbit.js
+¦   ¦   ¦               foundation.orbit.js.map
+¦   ¦   ¦               foundation.orbit.min.js
+¦   ¦   ¦               foundation.orbit.min.js.map
+¦   ¦   ¦               foundation.responsiveAccordionTabs.js
+¦   ¦   ¦               foundation.responsiveAccordionTabs.js.map
+¦   ¦   ¦               foundation.responsiveAccordionTabs.min.js
+¦   ¦   ¦               foundation.responsiveAccordionTabs.min.js.map
+¦   ¦   ¦               foundation.responsiveMenu.js
+¦   ¦   ¦               foundation.responsiveMenu.js.map
+¦   ¦   ¦               foundation.responsiveMenu.min.js
+¦   ¦   ¦               foundation.responsiveMenu.min.js.map
+¦   ¦   ¦               foundation.responsiveToggle.js
+¦   ¦   ¦               foundation.responsiveToggle.js.map
+¦   ¦   ¦               foundation.responsiveToggle.min.js
+¦   ¦   ¦               foundation.responsiveToggle.min.js.map
+¦   ¦   ¦               foundation.reveal.js
+¦   ¦   ¦               foundation.reveal.js.map
+¦   ¦   ¦               foundation.reveal.min.js
+¦   ¦   ¦               foundation.reveal.min.js.map
+¦   ¦   ¦               foundation.slider.js
+¦   ¦   ¦               foundation.slider.js.map
+¦   ¦   ¦               foundation.slider.min.js
+¦   ¦   ¦               foundation.slider.min.js.map
+¦   ¦   ¦               foundation.smoothScroll.js
+¦   ¦   ¦               foundation.smoothScroll.js.map
+¦   ¦   ¦               foundation.smoothScroll.min.js
+¦   ¦   ¦               foundation.smoothScroll.min.js.map
+¦   ¦   ¦               foundation.sticky.js
+¦   ¦   ¦               foundation.sticky.js.map
+¦   ¦   ¦               foundation.sticky.min.js
+¦   ¦   ¦               foundation.sticky.min.js.map
+¦   ¦   ¦               foundation.tabs.js
+¦   ¦   ¦               foundation.tabs.js.map
+¦   ¦   ¦               foundation.tabs.min.js
+¦   ¦   ¦               foundation.tabs.min.js.map
+¦   ¦   ¦               foundation.toggler.js
+¦   ¦   ¦               foundation.toggler.js.map
+¦   ¦   ¦               foundation.toggler.min.js
+¦   ¦   ¦               foundation.toggler.min.js.map
+¦   ¦   ¦               foundation.tooltip.js
+¦   ¦   ¦               foundation.tooltip.js.map
+¦   ¦   ¦               foundation.tooltip.min.js
+¦   ¦   ¦               foundation.tooltip.min.js.map
+¦   ¦   ¦               foundation.util.box.js
+¦   ¦   ¦               foundation.util.box.js.map
+¦   ¦   ¦               foundation.util.box.min.js
+¦   ¦   ¦               foundation.util.box.min.js.map
+¦   ¦   ¦               foundation.util.imageLoader.js
+¦   ¦   ¦               foundation.util.imageLoader.js.map
+¦   ¦   ¦               foundation.util.imageLoader.min.js
+¦   ¦   ¦               foundation.util.imageLoader.min.js.map
+¦   ¦   ¦               foundation.util.keyboard.js
+¦   ¦   ¦               foundation.util.keyboard.js.map
+¦   ¦   ¦               foundation.util.keyboard.min.js
+¦   ¦   ¦               foundation.util.keyboard.min.js.map
+¦   ¦   ¦               foundation.util.mediaQuery.js
+¦   ¦   ¦               foundation.util.mediaQuery.js.map
+¦   ¦   ¦               foundation.util.mediaQuery.min.js
+¦   ¦   ¦               foundation.util.mediaQuery.min.js.map
+¦   ¦   ¦               foundation.util.motion.js
+¦   ¦   ¦               foundation.util.motion.js.map
+¦   ¦   ¦               foundation.util.motion.min.js
+¦   ¦   ¦               foundation.util.motion.min.js.map
+¦   ¦   ¦               foundation.util.nest.js
+¦   ¦   ¦               foundation.util.nest.js.map
+¦   ¦   ¦               foundation.util.nest.min.js
+¦   ¦   ¦               foundation.util.nest.min.js.map
+¦   ¦   ¦               foundation.util.timer.js
+¦   ¦   ¦               foundation.util.timer.js.map
+¦   ¦   ¦               foundation.util.timer.min.js
+¦   ¦   ¦               foundation.util.timer.min.js.map
+¦   ¦   ¦               foundation.util.touch.js
+¦   ¦   ¦               foundation.util.touch.js.map
+¦   ¦   ¦               foundation.util.touch.min.js
+¦   ¦   ¦               foundation.util.touch.min.js.map
+¦   ¦   ¦               foundation.util.triggers.js
+¦   ¦   ¦               foundation.util.triggers.js.map
+¦   ¦   ¦               foundation.util.triggers.min.js
+¦   ¦   ¦               foundation.util.triggers.min.js.map
+¦   ¦   ¦               
+¦   ¦   +---docs
+¦   ¦   ¦   ¦   search.yml
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---assets
+¦   ¦   ¦   ¦   +---fonts
+¦   ¦   ¦   ¦   ¦       zurb-webfont.woff
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---img
+¦   ¦   ¦   ¦   ¦   ¦   advanced-class.png
+¦   ¦   ¦   ¦   ¦   ¦   docs-630.png
+¦   ¦   ¦   ¦   ¦   ¦   docs-631.png
+¦   ¦   ¦   ¦   ¦   ¦   docs-kitchensink.png
+¦   ¦   ¦   ¦   ¦   ¦   docs-vue.jpeg
+¦   ¦   ¦   ¦   ¦   ¦   foundation-brands.png
+¦   ¦   ¦   ¦   ¦   ¦   foundation-intro-class.jpg
+¦   ¦   ¦   ¦   ¦   ¦   foundation-turns-5.png
+¦   ¦   ¦   ¦   ¦   ¦   gulpfile.js
+¦   ¦   ¦   ¦   ¦   ¦   inky-banner-bg-boat.svg
+¦   ¦   ¦   ¦   ¦   ¦   inky-banner-bg-clear.svg
+¦   ¦   ¦   ¦   ¦   ¦   intro-css.png
+¦   ¦   ¦   ¦   ¦   ¦   intro-grid.png
+¦   ¦   ¦   ¦   ¦   ¦   yeti.svg
+¦   ¦   ¦   ¦   ¦   ¦   zero-to-website.png
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   +---a11y
+¦   ¦   ¦   ¦   ¦   ¦       chrome-a11y-inspector.jpg
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---generic
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-1.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-2.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-3.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-4.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-5.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-6.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-7.jpg
+¦   ¦   ¦   ¦   ¦   ¦       rectangle-8.jpg
+¦   ¦   ¦   ¦   ¦   ¦       square-1.jpg
+¦   ¦   ¦   ¦   ¦   ¦       square-2.jpg
+¦   ¦   ¦   ¦   ¦   ¦       square-3.jpg
+¦   ¦   ¦   ¦   ¦   ¦       square-4.jpg
+¦   ¦   ¦   ¦   ¦   ¦       square-5.jpg
+¦   ¦   ¦   ¦   ¦   ¦       square-6.jpg
+¦   ¦   ¦   ¦   ¦   ¦       voyager.jpg
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---icons
+¦   ¦   ¦   ¦   ¦   ¦       docked-close-button.svg
+¦   ¦   ¦   ¦   ¦   ¦       docked-expand-button.svg
+¦   ¦   ¦   ¦   ¦   ¦       email-icon.svg
+¦   ¦   ¦   ¦   ¦   ¦       facebook-icon.svg
+¦   ¦   ¦   ¦   ¦   ¦       favicon.ico
+¦   ¦   ¦   ¦   ¦   ¦       footer-expo-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-expo.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-foundation-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-foundation.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-icons-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-icons.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-products-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-products.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-studios-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-studios.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-top-icons-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-top-icons.png
+¦   ¦   ¦   ¦   ¦   ¦       footer-university.png
+¦   ¦   ¦   ¦   ¦   ¦       foundation-favicon.ico
+¦   ¦   ¦   ¦   ¦   ¦       logo-bower.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-composer.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-meteor.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-npm.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-nuget.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-pnpm.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-rubygems.svg
+¦   ¦   ¦   ¦   ¦   ¦       logo-yarn.svg
+¦   ¦   ¦   ¦   ¦   ¦       menu-grey.png
+¦   ¦   ¦   ¦   ¦   ¦       modal-close-button.svg
+¦   ¦   ¦   ¦   ¦   ¦       modal-collapse-button.svg
+¦   ¦   ¦   ¦   ¦   ¦       social-retina.png
+¦   ¦   ¦   ¦   ¦   ¦       social.png
+¦   ¦   ¦   ¦   ¦   ¦       twitter-icon.svg
+¦   ¦   ¦   ¦   ¦   ¦       watch-video-icon.svg
+¦   ¦   ¦   ¦   ¦   ¦       youtube-icon.svg
+¦   ¦   ¦   ¦   ¦   ¦       youtube.png
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---interchange
+¦   ¦   ¦   ¦   ¦   ¦       large.jpg
+¦   ¦   ¦   ¦   ¦   ¦       map-medium.png
+¦   ¦   ¦   ¦   ¦   ¦       map-small.png
+¦   ¦   ¦   ¦   ¦   ¦       medium.jpg
+¦   ¦   ¦   ¦   ¦   ¦       small.jpg
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---logos
+¦   ¦   ¦   ¦   ¦   ¦       browser-stack.svg
+¦   ¦   ¦   ¦   ¦   ¦       codepen-button.svg
+¦   ¦   ¦   ¦   ¦   ¦       cp1.svg
+¦   ¦   ¦   ¦   ¦   ¦       cp2.svg
+¦   ¦   ¦   ¦   ¦   ¦       cp3.svg
+¦   ¦   ¦   ¦   ¦   ¦       edit-in-browser.svg
+¦   ¦   ¦   ¦   ¦   ¦       foundation-sites-nuget-icon-128x128.jpg
+¦   ¦   ¦   ¦   ¦   ¦       sass-logo.svg
+¦   ¦   ¦   ¦   ¦   ¦       zurb-logo.svg
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---media-object
+¦   ¦   ¦   ¦   ¦   ¦       avatar-1.jpg
+¦   ¦   ¦   ¦   ¦   ¦       avatar-2.jpg
+¦   ¦   ¦   ¦   ¦   ¦       avatar-3.jpg
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---orbit
+¦   ¦   ¦   ¦   ¦   ¦       01.jpg
+¦   ¦   ¦   ¦   ¦   ¦       02.jpg
+¦   ¦   ¦   ¦   ¦   ¦       03.jpg
+¦   ¦   ¦   ¦   ¦   ¦       04.jpg
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   L---thumbnail
+¦   ¦   ¦   ¦   ¦           01.jpg
+¦   ¦   ¦   ¦   ¦           02.jpg
+¦   ¦   ¦   ¦   ¦           03.jpg
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   +---js
+¦   ¦   ¦   ¦   ¦       docs.ad.js
+¦   ¦   ¦   ¦   ¦       docs.examples.js
+¦   ¦   ¦   ¦   ¦       docs.interchangeMap.js
+¦   ¦   ¦   ¦   ¦       docs.js
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---partials
+¦   ¦   ¦   ¦   ¦       interchange-default.html
+¦   ¦   ¦   ¦   ¦       interchange-large.html
+¦   ¦   ¦   ¦   ¦       interchange-medium.html
+¦   ¦   ¦   ¦   ¦       sticky-nav.html
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   L---scss
+¦   ¦   ¦   ¦       ¦   docs.scss
+¦   ¦   ¦   ¦       ¦   _accordion-content.scss
+¦   ¦   ¦   ¦       ¦   _component-list.scss
+¦   ¦   ¦   ¦       ¦   _course-callout.scss
+¦   ¦   ¦   ¦       ¦   _docs-footer.scss
+¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦       +---content
+¦   ¦   ¦   ¦       ¦       _install.scss
+¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦       L---examples
+¦   ¦   ¦   ¦               _buttons.scss
+¦   ¦   ¦   ¦               _grid.scss
+¦   ¦   ¦   ¦               _motion-ui.scss
+¦   ¦   ¦   ¦               _off-canvas.scss
+¦   ¦   ¦   ¦               _orbit.scss
+¦   ¦   ¦   ¦               _responsive-embed.scss
+¦   ¦   ¦   ¦               _reveal.scss
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---layout
+¦   ¦   ¦   ¦       default.html
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---pages
+¦   ¦   ¦   ¦       abide.md
+¦   ¦   ¦   ¦       accessibility.md
+¦   ¦   ¦   ¦       accordion-menu.md
+¦   ¦   ¦   ¦       accordion.md
+¦   ¦   ¦   ¦       badge.md
+¦   ¦   ¦   ¦       breadcrumbs.md
+¦   ¦   ¦   ¦       button-group.md
+¦   ¦   ¦   ¦       button.md
+¦   ¦   ¦   ¦       callout.md
+¦   ¦   ¦   ¦       card.md
+¦   ¦   ¦   ¦       close-button.md
+¦   ¦   ¦   ¦       compatibility.md
+¦   ¦   ¦   ¦       drilldown-menu.md
+¦   ¦   ¦   ¦       dropdown-menu.md
+¦   ¦   ¦   ¦       dropdown.md
+¦   ¦   ¦   ¦       equalizer.md
+¦   ¦   ¦   ¦       flex-grid.md
+¦   ¦   ¦   ¦       flexbox-mode.md
+¦   ¦   ¦   ¦       flexbox-utilities.md
+¦   ¦   ¦   ¦       float-classes.md
+¦   ¦   ¦   ¦       forms.md
+¦   ¦   ¦   ¦       global.md
+¦   ¦   ¦   ¦       grid.md
+¦   ¦   ¦   ¦       index.md
+¦   ¦   ¦   ¦       installation.md
+¦   ¦   ¦   ¦       interchange.md
+¦   ¦   ¦   ¦       javascript-utilities.md
+¦   ¦   ¦   ¦       javascript.md
+¦   ¦   ¦   ¦       kitchen-sink.md
+¦   ¦   ¦   ¦       label.md
+¦   ¦   ¦   ¦       magellan.md
+¦   ¦   ¦   ¦       media-object.md
+¦   ¦   ¦   ¦       media-queries.md
+¦   ¦   ¦   ¦       menu.md
+¦   ¦   ¦   ¦       motion-ui.md
+¦   ¦   ¦   ¦       navigation.md
+¦   ¦   ¦   ¦       off-canvas.md
+¦   ¦   ¦   ¦       orbit.md
+¦   ¦   ¦   ¦       pagination.md
+¦   ¦   ¦   ¦       panini.md
+¦   ¦   ¦   ¦       progress-bar.md
+¦   ¦   ¦   ¦       prototyping-utilities.md
+¦   ¦   ¦   ¦       responsive-accordion-tabs.md
+¦   ¦   ¦   ¦       responsive-embed.md
+¦   ¦   ¦   ¦       responsive-navigation.md
+¦   ¦   ¦   ¦       reveal.md
+¦   ¦   ¦   ¦       rtl.md
+¦   ¦   ¦   ¦       sass-functions.md
+¦   ¦   ¦   ¦       sass-mixins.md
+¦   ¦   ¦   ¦       sass.md
+¦   ¦   ¦   ¦       slider.md
+¦   ¦   ¦   ¦       smooth-scroll.md
+¦   ¦   ¦   ¦       starter-projects.md
+¦   ¦   ¦   ¦       sticky.md
+¦   ¦   ¦   ¦       style-sherpa.md
+¦   ¦   ¦   ¦       switch.md
+¦   ¦   ¦   ¦       table.md
+¦   ¦   ¦   ¦       tabs.md
+¦   ¦   ¦   ¦       thumbnail.md
+¦   ¦   ¦   ¦       toggler.md
+¦   ¦   ¦   ¦       tooltip.md
+¦   ¦   ¦   ¦       top-bar.md
+¦   ¦   ¦   ¦       typography-base.md
+¦   ¦   ¦   ¦       typography-helpers.md
+¦   ¦   ¦   ¦       visibility.md
+¦   ¦   ¦   ¦       xy-grid.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   L---partials
+¦   ¦   ¦           component-list.html
+¦   ¦   ¦           docs-video-codepen.html
+¦   ¦   ¦           footer-contact.html
+¦   ¦   ¦           footer.html
+¦   ¦   ¦           info-banner.html
+¦   ¦   ¦           mobile-navigation.html
+¦   ¦   ¦           navigation.html
+¦   ¦   ¦           newsletter-signup-rr.html
+¦   ¦   ¦           off-canvi.html
+¦   ¦   ¦           search-bar.html
+¦   ¦   ¦           toc-template.hbs
+¦   ¦   ¦           training-callout.html
+¦   ¦   ¦           
+¦   ¦   +---gulp
+¦   ¦   ¦   ¦   config.js
+¦   ¦   ¦   ¦   utils.js
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   L---tasks
+¦   ¦   ¦           babel-error.js
+¦   ¦   ¦           check.js
+¦   ¦   ¦           clean.js
+¦   ¦   ¦           copy.js
+¦   ¦   ¦           customizer.js
+¦   ¦   ¦           deploy.js
+¦   ¦   ¦           docs.js
+¦   ¦   ¦           javascript.js
+¦   ¦   ¦           lint.js
+¦   ¦   ¦           sass.js
+¦   ¦   ¦           test.js
+¦   ¦   ¦           
+¦   ¦   +---js
+¦   ¦   ¦   ¦   foundation.abide.js
+¦   ¦   ¦   ¦   foundation.accordion.js
+¦   ¦   ¦   ¦   foundation.accordionMenu.js
+¦   ¦   ¦   ¦   foundation.core.js
+¦   ¦   ¦   ¦   foundation.core.plugin.js
+¦   ¦   ¦   ¦   foundation.core.utils.js
+¦   ¦   ¦   ¦   foundation.drilldown.js
+¦   ¦   ¦   ¦   foundation.dropdown.js
+¦   ¦   ¦   ¦   foundation.dropdownMenu.js
+¦   ¦   ¦   ¦   foundation.equalizer.js
+¦   ¦   ¦   ¦   foundation.interchange.js
+¦   ¦   ¦   ¦   foundation.js
+¦   ¦   ¦   ¦   foundation.magellan.js
+¦   ¦   ¦   ¦   foundation.offcanvas.js
+¦   ¦   ¦   ¦   foundation.orbit.js
+¦   ¦   ¦   ¦   foundation.positionable.js
+¦   ¦   ¦   ¦   foundation.responsiveAccordionTabs.js
+¦   ¦   ¦   ¦   foundation.responsiveMenu.js
+¦   ¦   ¦   ¦   foundation.responsiveToggle.js
+¦   ¦   ¦   ¦   foundation.reveal.js
+¦   ¦   ¦   ¦   foundation.slider.js
+¦   ¦   ¦   ¦   foundation.smoothScroll.js
+¦   ¦   ¦   ¦   foundation.sticky.js
+¦   ¦   ¦   ¦   foundation.tabs.js
+¦   ¦   ¦   ¦   foundation.toggler.js
+¦   ¦   ¦   ¦   foundation.tooltip.js
+¦   ¦   ¦   ¦   foundation.util.box.js
+¦   ¦   ¦   ¦   foundation.util.imageLoader.js
+¦   ¦   ¦   ¦   foundation.util.keyboard.js
+¦   ¦   ¦   ¦   foundation.util.mediaQuery.js
+¦   ¦   ¦   ¦   foundation.util.motion.js
+¦   ¦   ¦   ¦   foundation.util.nest.js
+¦   ¦   ¦   ¦   foundation.util.timer.js
+¦   ¦   ¦   ¦   foundation.util.touch.js
+¦   ¦   ¦   ¦   foundation.util.triggers.js
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---entries
+¦   ¦   ¦   ¦   ¦   foundation-plugins.js
+¦   ¦   ¦   ¦   ¦   foundation.js
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   L---plugins
+¦   ¦   ¦   ¦           foundation.abide.js
+¦   ¦   ¦   ¦           foundation.accordion.js
+¦   ¦   ¦   ¦           foundation.accordionMenu.js
+¦   ¦   ¦   ¦           foundation.core.js
+¦   ¦   ¦   ¦           foundation.drilldown.js
+¦   ¦   ¦   ¦           foundation.dropdown.js
+¦   ¦   ¦   ¦           foundation.dropdownMenu.js
+¦   ¦   ¦   ¦           foundation.equalizer.js
+¦   ¦   ¦   ¦           foundation.interchange.js
+¦   ¦   ¦   ¦           foundation.magellan.js
+¦   ¦   ¦   ¦           foundation.offcanvas.js
+¦   ¦   ¦   ¦           foundation.orbit.js
+¦   ¦   ¦   ¦           foundation.responsiveAccordionTabs.js
+¦   ¦   ¦   ¦           foundation.responsiveMenu.js
+¦   ¦   ¦   ¦           foundation.responsiveToggle.js
+¦   ¦   ¦   ¦           foundation.reveal.js
+¦   ¦   ¦   ¦           foundation.slider.js
+¦   ¦   ¦   ¦           foundation.smoothScroll.js
+¦   ¦   ¦   ¦           foundation.sticky.js
+¦   ¦   ¦   ¦           foundation.tabs.js
+¦   ¦   ¦   ¦           foundation.toggler.js
+¦   ¦   ¦   ¦           foundation.tooltip.js
+¦   ¦   ¦   ¦           foundation.util.box.js
+¦   ¦   ¦   ¦           foundation.util.imageLoader.js
+¦   ¦   ¦   ¦           foundation.util.keyboard.js
+¦   ¦   ¦   ¦           foundation.util.mediaQuery.js
+¦   ¦   ¦   ¦           foundation.util.motion.js
+¦   ¦   ¦   ¦           foundation.util.nest.js
+¦   ¦   ¦   ¦           foundation.util.timer.js
+¦   ¦   ¦   ¦           foundation.util.touch.js
+¦   ¦   ¦   ¦           foundation.util.triggers.js
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   L---typescript
+¦   ¦   ¦           foundation.d.ts
+¦   ¦   ¦           
+¦   ¦   +---patches
+¦   ¦   ¦       browserstack-runner+0.9.2.patch
+¦   ¦   ¦       
+¦   ¦   +---scss
+¦   ¦   ¦   ¦   foundation.scss
+¦   ¦   ¦   ¦   _global.scss
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---components
+¦   ¦   ¦   ¦       _accordion-menu.scss
+¦   ¦   ¦   ¦       _accordion.scss
+¦   ¦   ¦   ¦       _badge.scss
+¦   ¦   ¦   ¦       _breadcrumbs.scss
+¦   ¦   ¦   ¦       _button-group.scss
+¦   ¦   ¦   ¦       _button.scss
+¦   ¦   ¦   ¦       _callout.scss
+¦   ¦   ¦   ¦       _card.scss
+¦   ¦   ¦   ¦       _close-button.scss
+¦   ¦   ¦   ¦       _drilldown.scss
+¦   ¦   ¦   ¦       _dropdown-menu.scss
+¦   ¦   ¦   ¦       _dropdown.scss
+¦   ¦   ¦   ¦       _flex-video.scss
+¦   ¦   ¦   ¦       _flex.scss
+¦   ¦   ¦   ¦       _float.scss
+¦   ¦   ¦   ¦       _label.scss
+¦   ¦   ¦   ¦       _media-object.scss
+¦   ¦   ¦   ¦       _menu-icon.scss
+¦   ¦   ¦   ¦       _menu.scss
+¦   ¦   ¦   ¦       _off-canvas.scss
+¦   ¦   ¦   ¦       _orbit.scss
+¦   ¦   ¦   ¦       _pagination.scss
+¦   ¦   ¦   ¦       _progress-bar.scss
+¦   ¦   ¦   ¦       _responsive-embed.scss
+¦   ¦   ¦   ¦       _reveal.scss
+¦   ¦   ¦   ¦       _slider.scss
+¦   ¦   ¦   ¦       _sticky.scss
+¦   ¦   ¦   ¦       _switch.scss
+¦   ¦   ¦   ¦       _table.scss
+¦   ¦   ¦   ¦       _tabs.scss
+¦   ¦   ¦   ¦       _thumbnail.scss
+¦   ¦   ¦   ¦       _title-bar.scss
+¦   ¦   ¦   ¦       _tooltip.scss
+¦   ¦   ¦   ¦       _top-bar.scss
+¦   ¦   ¦   ¦       _visibility.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---forms
+¦   ¦   ¦   ¦       _checkbox.scss
+¦   ¦   ¦   ¦       _error.scss
+¦   ¦   ¦   ¦       _fieldset.scss
+¦   ¦   ¦   ¦       _forms.scss
+¦   ¦   ¦   ¦       _help-text.scss
+¦   ¦   ¦   ¦       _input-group.scss
+¦   ¦   ¦   ¦       _label.scss
+¦   ¦   ¦   ¦       _meter.scss
+¦   ¦   ¦   ¦       _progress.scss
+¦   ¦   ¦   ¦       _range.scss
+¦   ¦   ¦   ¦       _select.scss
+¦   ¦   ¦   ¦       _text.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---grid
+¦   ¦   ¦   ¦       _classes.scss
+¦   ¦   ¦   ¦       _column.scss
+¦   ¦   ¦   ¦       _flex-grid.scss
+¦   ¦   ¦   ¦       _grid.scss
+¦   ¦   ¦   ¦       _gutter.scss
+¦   ¦   ¦   ¦       _layout.scss
+¦   ¦   ¦   ¦       _position.scss
+¦   ¦   ¦   ¦       _row.scss
+¦   ¦   ¦   ¦       _size.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---prototype
+¦   ¦   ¦   ¦       _arrow.scss
+¦   ¦   ¦   ¦       _border-box.scss
+¦   ¦   ¦   ¦       _border-none.scss
+¦   ¦   ¦   ¦       _bordered.scss
+¦   ¦   ¦   ¦       _box.scss
+¦   ¦   ¦   ¦       _display.scss
+¦   ¦   ¦   ¦       _font-styling.scss
+¦   ¦   ¦   ¦       _list-style-type.scss
+¦   ¦   ¦   ¦       _overflow.scss
+¦   ¦   ¦   ¦       _position.scss
+¦   ¦   ¦   ¦       _prototype.scss
+¦   ¦   ¦   ¦       _relation.scss
+¦   ¦   ¦   ¦       _rotate.scss
+¦   ¦   ¦   ¦       _rounded.scss
+¦   ¦   ¦   ¦       _separator.scss
+¦   ¦   ¦   ¦       _shadow.scss
+¦   ¦   ¦   ¦       _sizing.scss
+¦   ¦   ¦   ¦       _spacing.scss
+¦   ¦   ¦   ¦       _text-decoration.scss
+¦   ¦   ¦   ¦       _text-transformation.scss
+¦   ¦   ¦   ¦       _text-utilities.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---settings
+¦   ¦   ¦   ¦       _settings.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---typography
+¦   ¦   ¦   ¦       _alignment.scss
+¦   ¦   ¦   ¦       _base.scss
+¦   ¦   ¦   ¦       _helpers.scss
+¦   ¦   ¦   ¦       _print.scss
+¦   ¦   ¦   ¦       _typography.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---util
+¦   ¦   ¦   ¦       _breakpoint.scss
+¦   ¦   ¦   ¦       _color.scss
+¦   ¦   ¦   ¦       _direction.scss
+¦   ¦   ¦   ¦       _flex.scss
+¦   ¦   ¦   ¦       _math.scss
+¦   ¦   ¦   ¦       _mixins.scss
+¦   ¦   ¦   ¦       _selector.scss
+¦   ¦   ¦   ¦       _typography.scss
+¦   ¦   ¦   ¦       _unit.scss
+¦   ¦   ¦   ¦       _util.scss
+¦   ¦   ¦   ¦       _value.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---vendor
+¦   ¦   ¦   ¦       normalize.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   L---xy-grid
+¦   ¦   ¦           _cell.scss
+¦   ¦   ¦           _classes.scss
+¦   ¦   ¦           _collapse.scss
+¦   ¦   ¦           _frame.scss
+¦   ¦   ¦           _grid.scss
+¦   ¦   ¦           _gutters.scss
+¦   ¦   ¦           _layout.scss
+¦   ¦   ¦           _position.scss
+¦   ¦   ¦           _xy-grid.scss
+¦   ¦   ¦           
+¦   ¦   +---test
+¦   ¦   ¦   +---javascript
+¦   ¦   ¦   ¦   ¦   index.html
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---components
+¦   ¦   ¦   ¦   ¦       abide.js
+¦   ¦   ¦   ¦   ¦       accordion.js
+¦   ¦   ¦   ¦   ¦       accordionMenu.js
+¦   ¦   ¦   ¦   ¦       drilldown.js
+¦   ¦   ¦   ¦   ¦       dropdown.js
+¦   ¦   ¦   ¦   ¦       dropdownMenu.js
+¦   ¦   ¦   ¦   ¦       equalizer.js
+¦   ¦   ¦   ¦   ¦       interchange.js
+¦   ¦   ¦   ¦   ¦       magellan.js
+¦   ¦   ¦   ¦   ¦       offcanvas.js
+¦   ¦   ¦   ¦   ¦       orbit.js
+¦   ¦   ¦   ¦   ¦       responsiveMenu.js
+¦   ¦   ¦   ¦   ¦       responsiveToggle.js
+¦   ¦   ¦   ¦   ¦       reveal.js
+¦   ¦   ¦   ¦   ¦       slider.js
+¦   ¦   ¦   ¦   ¦       sticky.js
+¦   ¦   ¦   ¦   ¦       tabs.js
+¦   ¦   ¦   ¦   ¦       toggler.js
+¦   ¦   ¦   ¦   ¦       tooltip.js
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---core
+¦   ¦   ¦   ¦   ¦       core.js
+¦   ¦   ¦   ¦   ¦       utils.js
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---lib
+¦   ¦   ¦   ¦   ¦       keyboard-event-mock.js
+¦   ¦   ¦   ¦   ¦       utils.js
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   L---util
+¦   ¦   ¦   ¦           box.js
+¦   ¦   ¦   ¦           keyboard.js
+¦   ¦   ¦   ¦           mediaQuery.js
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---sass
+¦   ¦   ¦   ¦       test_sass.js
+¦   ¦   ¦   ¦       _breakpoint.scss
+¦   ¦   ¦   ¦       _color.scss
+¦   ¦   ¦   ¦       _components.scss
+¦   ¦   ¦   ¦       _selector.scss
+¦   ¦   ¦   ¦       _unit.scss
+¦   ¦   ¦   ¦       _value.scss
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   L---visual
+¦   ¦   ¦       ¦   _template.html
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---abide
+¦   ¦   ¦       ¦       abide-checkboxes.html
+¦   ¦   ¦       ¦       abide-radio.html
+¦   ¦   ¦       ¦       accessibility.html
+¦   ¦   ¦       ¦       error-messages.html
+¦   ¦   ¦       ¦       hidden_and_ignored_fields.html
+¦   ¦   ¦       ¦       text.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---accordion
+¦   ¦   ¦       ¦       focus.html
+¦   ¦   ¦       ¦       nested.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---accordion-menu
+¦   ¦   ¦       ¦       accordionmenu.html
+¦   ¦   ¦       ¦       keyboard.html
+¦   ¦   ¦       ¦       parent-link.html
+¦   ¦   ¦       ¦       submenu-toggle.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---breadcrumbs
+¦   ¦   ¦       ¦       breadcrumbs.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---button
+¦   ¦   ¦       ¦       button-group.html
+¦   ¦   ¦       ¦       button.html
+¦   ¦   ¦       ¦       cursor.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---card
+¦   ¦   ¦       ¦       card.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---controls
+¦   ¦   ¦       ¦       close-button.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---drilldown
+¦   ¦   ¦       ¦       drilldown-menu-auto-height.html
+¦   ¦   ¦       ¦       drilldown-menu-parent-link.html
+¦   ¦   ¦       ¦       drilldown-menu-scroll-top.html
+¦   ¦   ¦       ¦       drilldown-show-menu.html
+¦   ¦   ¦       ¦       long-titles.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---dropdown
+¦   ¦   ¦       ¦       basic-dropdown-rtl.html
+¦   ¦   ¦       ¦       close-on-click.html
+¦   ¦   ¦       ¦       dropdown-on-input.html
+¦   ¦   ¦       ¦       explicit-positioning.html
+¦   ¦   ¦       ¦       in-top-bar.html
+¦   ¦   ¦       ¦       linked-dropdown-toggle.html
+¦   ¦   ¦       ¦       long.html
+¦   ¦   ¦       ¦       mouse-on-browser-ui.html
+¦   ¦   ¦       ¦       offsets.html
+¦   ¦   ¦       ¦       open-the-same-dropdown.html
+¦   ¦   ¦       ¦       overflow-right-left-allowed.html
+¦   ¦   ¦       ¦       overflow-right-left.html
+¦   ¦   ¦       ¦       overflow.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---dropdown-menu
+¦   ¦   ¦       ¦       basic-dropdown-menu-rtl.html
+¦   ¦   ¦       ¦       dropdown-menu-cross-leave.html
+¦   ¦   ¦       ¦       left-aligned-dropdown-menu-inside-top-bar-right.html
+¦   ¦   ¦       ¦       right-aligned-dropdown-menu.html
+¦   ¦   ¦       ¦       submenu-mouse-reenter.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---equalizer
+¦   ¦   ¦       ¦       equalizer-events.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---flex-grid
+¦   ¦   ¦       ¦       button-group.html
+¦   ¦   ¦       ¦       column-row.html
+¦   ¦   ¦       ¦       nesting.html
+¦   ¦   ¦       ¦       top-bar.html
+¦   ¦   ¦       ¦       unstack-block-grid.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---form
+¦   ¦   ¦       ¦       input-group-float.html
+¦   ¦   ¦       ¦       input-group-xygrid.html
+¦   ¦   ¦       ¦       select-icon.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---grid
+¦   ¦   ¦       ¦       centered-columns.html
+¦   ¦   ¦       ¦       collapse-nesting.html
+¦   ¦   ¦       ¦       nesting.html
+¦   ¦   ¦       ¦       uncentered-columns.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---keyboard
+¦   ¦   ¦       ¦       trap-release-focus.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---magellan
+¦   ¦   ¦       ¦       active-item.html
+¦   ¦   ¦       ¦       unordered-links.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---media-object
+¦   ¦   ¦       ¦       media-object-mixins-flex-mode.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---menu
+¦   ¦   ¦       ¦       active-menu-flex.html
+¦   ¦   ¦       ¦       active-menu-float.html
+¦   ¦   ¦       ¦       advanced-nested-menu-flex.html
+¦   ¦   ¦       ¦       advanced-nested-menu-float.html
+¦   ¦   ¦       ¦       basic-menu-flex.html
+¦   ¦   ¦       ¦       basic-menu-float.html
+¦   ¦   ¦       ¦       expanded-menu-flex.html
+¦   ¦   ¦       ¦       expanded-menu-float.html
+¦   ¦   ¦       ¦       horizontal-dropdownmenu-alignment-flex.html
+¦   ¦   ¦       ¦       horizontal-dropdownmenu-alignment-float.html
+¦   ¦   ¦       ¦       horizontal-menu-alignment-flex.html
+¦   ¦   ¦       ¦       horizontal-menu-alignment-float.html
+¦   ¦   ¦       ¦       menu-centered-flex.html
+¦   ¦   ¦       ¦       menu-centered-float.html
+¦   ¦   ¦       ¦       menu-form-flex.html
+¦   ¦   ¦       ¦       menu-form-float.html
+¦   ¦   ¦       ¦       menu-icons-flex.html
+¦   ¦   ¦       ¦       menu-icons-float.html
+¦   ¦   ¦       ¦       menu-text-flex.html
+¦   ¦   ¦       ¦       menu-text-float.html
+¦   ¦   ¦       ¦       nested-menu-flex.html
+¦   ¦   ¦       ¦       nested-menu-float.html
+¦   ¦   ¦       ¦       responsive-menu-flex.html
+¦   ¦   ¦       ¦       responsive-menu-float.html
+¦   ¦   ¦       ¦       simple-menu-flex.html
+¦   ¦   ¦       ¦       simple-menu-float.html
+¦   ¦   ¦       ¦       vertical-accordionmenu-alignment-flex.html
+¦   ¦   ¦       ¦       vertical-accordionmenu-alignment-float.html
+¦   ¦   ¦       ¦       vertical-drilldownmenu-alignment-flex.html
+¦   ¦   ¦       ¦       vertical-drilldownmenu-alignment-float.html
+¦   ¦   ¦       ¦       vertical-dropdownmenu-alignment-flex.html
+¦   ¦   ¦       ¦       vertical-dropdownmenu-alignment-float.html
+¦   ¦   ¦       ¦       vertical-menu-alignment-flex.html
+¦   ¦   ¦       ¦       vertical-menu-alignment-float.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---offcanvas
+¦   ¦   ¦       ¦       absolute.html
+¦   ¦   ¦       ¦       all-options.html
+¦   ¦   ¦       ¦       nested.html
+¦   ¦   ¦       ¦       offcanvas-reveal-modal-large.html
+¦   ¦   ¦       ¦       offcanvas-reveal-modal.html
+¦   ¦   ¦       ¦       reveal-on-option.html
+¦   ¦   ¦       ¦       reveal.html
+¦   ¦   ¦       ¦       sticky.html
+¦   ¦   ¦       ¦       transition-time.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---orbit
+¦   ¦   ¦       ¦       orbit.html
+¦   ¦   ¦       ¦       touch.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---prototype
+¦   ¦   ¦       ¦       arrow.html
+¦   ¦   ¦       ¦       border-box.html
+¦   ¦   ¦       ¦       border-none.html
+¦   ¦   ¦       ¦       component-styling.html
+¦   ¦   ¦       ¦       display.html
+¦   ¦   ¦       ¦       font-styling.html
+¦   ¦   ¦       ¦       image-replacement.html
+¦   ¦   ¦       ¦       list-styling-ordered.html
+¦   ¦   ¦       ¦       list-styling-unordered.html
+¦   ¦   ¦       ¦       overflow.html
+¦   ¦   ¦       ¦       separator.html
+¦   ¦   ¦       ¦       sizing-height.html
+¦   ¦   ¦       ¦       sizing-width.html
+¦   ¦   ¦       ¦       text-decoration.html
+¦   ¦   ¦       ¦       text-transformation.html
+¦   ¦   ¦       ¦       text-truncate.html
+¦   ¦   ¦       ¦       text-wrapping.html
+¦   ¦   ¦       ¦       typescale.html
+¦   ¦   ¦       ¦       _template.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---responsive-accordion-tabs
+¦   ¦   ¦       ¦       responsive-accordion-tabs.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---responsive-menu
+¦   ¦   ¦       ¦       accordion-dropdown.html
+¦   ¦   ¦       ¦       dropdown-on-right-middle.html
+¦   ¦   ¦       ¦       re-init.html
+¦   ¦   ¦       ¦       responsive-menu-left-dropdown.html
+¦   ¦   ¦       ¦       responsive-menu-right-dropdown.html
+¦   ¦   ¦       ¦       responsive-menu.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---responsive-toggle
+¦   ¦   ¦       ¦       responsive-toggle.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---reveal
+¦   ¦   ¦       ¦       basic.html
+¦   ¦   ¦       ¦       close-on-click.html
+¦   ¦   ¦       ¦       element-outside-dom-click.html
+¦   ¦   ¦       ¦       full-reveal.html
+¦   ¦   ¦       ¦       long-page-with-add-this.html
+¦   ¦   ¦       ¦       long-page.html
+¦   ¦   ¦       ¦       multiple-anchors.html
+¦   ¦   ¦       ¦       nested-deep-link.html
+¦   ¦   ¦       ¦       reveal-callout.html
+¦   ¦   ¦       ¦       reveal-test-data-options.html
+¦   ¦   ¦       ¦       tall.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---slider
+¦   ¦   ¦       ¦       nonzero-start.html
+¦   ¦   ¦       ¦       parseFloat.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---sticky
+¦   ¦   ¦       ¦       accordions-with-anchors.html
+¦   ¦   ¦       ¦       anchors-with-callouts.html
+¦   ¦   ¦       ¦       height-transition.html
+¦   ¦   ¦       ¦       menus-with-anchors.html
+¦   ¦   ¦       ¦       simple-menu.html
+¦   ¦   ¦       ¦       sticky-menu-dynamic-height.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---tabs
+¦   ¦   ¦       ¦       deep-linking.html
+¦   ¦   ¦       ¦       tabs-target.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---tooltip
+¦   ¦   ¦       ¦       explicit-positioning.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---top-bar
+¦   ¦   ¦       ¦       advanced-layout.html
+¦   ¦   ¦       ¦       responsive-toggle-flex.html
+¦   ¦   ¦       ¦       stacking.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---triggers
+¦   ¦   ¦       ¦       containing-toggle.html
+¦   ¦   ¦       ¦       programmatic.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---typography-helpers
+¦   ¦   ¦       ¦       responsive-text-alignment.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---vertical-rhythm
+¦   ¦   ¦       ¦       vertical-rhythm.html
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       L---xy-grid
+¦   ¦   ¦               block-grid.html
+¦   ¦   ¦               collapse.html
+¦   ¦   ¦               combo-grids.html
+¦   ¦   ¦               containers.html
+¦   ¦   ¦               flex-utilities.html
+¦   ¦   ¦               frame-grid.html
+¦   ¦   ¦               kitchen-sink.html
+¦   ¦   ¦               margin-grid.html
+¦   ¦   ¦               offset.html
+¦   ¦   ¦               padding-grid.html
+¦   ¦   ¦               responsive-gutters.html
+¦   ¦   ¦               vertical-grid.html
+¦   ¦   ¦               
+¦   ¦   L---_vendor
+¦   ¦       L---sassy-lists
+¦   ¦           L---stylesheets
+¦   ¦               +---functions
+¦   ¦               ¦       _contain.scss
+¦   ¦               ¦       _purge.scss
+¦   ¦               ¦       _remove.scss
+¦   ¦               ¦       _replace.scss
+¦   ¦               ¦       _to-list.scss
+¦   ¦               ¦       
+¦   ¦               L---helpers
+¦   ¦                       _missing-dependencies.scss
+¦   ¦                       _true.scss
+¦   ¦                       
+¦   +---jquery
+¦   ¦   ¦   AUTHORS.txt
+¦   ¦   ¦   bower.json
+¦   ¦   ¦   LICENSE.txt
+¦   ¦   ¦   package.json
+¦   ¦   ¦   README.md
+¦   ¦   ¦   
+¦   ¦   +---dist
+¦   ¦   ¦       jquery.js
+¦   ¦   ¦       jquery.min.js
+¦   ¦   ¦       jquery.min.map
+¦   ¦   ¦       jquery.slim.js
+¦   ¦   ¦       jquery.slim.min.js
+¦   ¦   ¦       jquery.slim.min.map
+¦   ¦   ¦       
+¦   ¦   L---src
+¦   ¦       ¦   ajax.js
+¦   ¦       ¦   attributes.js
+¦   ¦       ¦   callbacks.js
+¦   ¦       ¦   core.js
+¦   ¦       ¦   css.js
+¦   ¦       ¦   data.js
+¦   ¦       ¦   deferred.js
+¦   ¦       ¦   deprecated.js
+¦   ¦       ¦   dimensions.js
+¦   ¦       ¦   effects.js
+¦   ¦       ¦   event.js
+¦   ¦       ¦   jquery.js
+¦   ¦       ¦   manipulation.js
+¦   ¦       ¦   offset.js
+¦   ¦       ¦   queue.js
+¦   ¦       ¦   selector-native.js
+¦   ¦       ¦   selector.js
+¦   ¦       ¦   serialize.js
+¦   ¦       ¦   traversing.js
+¦   ¦       ¦   wrap.js
+¦   ¦       ¦   
+¦   ¦       +---ajax
+¦   ¦       ¦   ¦   jsonp.js
+¦   ¦       ¦   ¦   load.js
+¦   ¦       ¦   ¦   script.js
+¦   ¦       ¦   ¦   xhr.js
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---var
+¦   ¦       ¦           location.js
+¦   ¦       ¦           nonce.js
+¦   ¦       ¦           rquery.js
+¦   ¦       ¦           
+¦   ¦       +---attributes
+¦   ¦       ¦       attr.js
+¦   ¦       ¦       classes.js
+¦   ¦       ¦       prop.js
+¦   ¦       ¦       support.js
+¦   ¦       ¦       val.js
+¦   ¦       ¦       
+¦   ¦       +---core
+¦   ¦       ¦   ¦   access.js
+¦   ¦       ¦   ¦   camelCase.js
+¦   ¦       ¦   ¦   DOMEval.js
+¦   ¦       ¦   ¦   init.js
+¦   ¦       ¦   ¦   isAttached.js
+¦   ¦       ¦   ¦   nodeName.js
+¦   ¦       ¦   ¦   parseHTML.js
+¦   ¦       ¦   ¦   parseXML.js
+¦   ¦       ¦   ¦   ready-no-deferred.js
+¦   ¦       ¦   ¦   ready.js
+¦   ¦       ¦   ¦   readyException.js
+¦   ¦       ¦   ¦   stripAndCollapse.js
+¦   ¦       ¦   ¦   support.js
+¦   ¦       ¦   ¦   toType.js
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---var
+¦   ¦       ¦           rhtml.js
+¦   ¦       ¦           rsingleTag.js
+¦   ¦       ¦           
+¦   ¦       +---css
+¦   ¦       ¦   ¦   addGetHookIf.js
+¦   ¦       ¦   ¦   adjustCSS.js
+¦   ¦       ¦   ¦   curCSS.js
+¦   ¦       ¦   ¦   finalPropName.js
+¦   ¦       ¦   ¦   hiddenVisibleSelectors.js
+¦   ¦       ¦   ¦   showHide.js
+¦   ¦       ¦   ¦   support.js
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---var
+¦   ¦       ¦           cssExpand.js
+¦   ¦       ¦           getStyles.js
+¦   ¦       ¦           isHiddenWithinTree.js
+¦   ¦       ¦           rboxStyle.js
+¦   ¦       ¦           rcustomProp.js
+¦   ¦       ¦           rnumnonpx.js
+¦   ¦       ¦           swap.js
+¦   ¦       ¦           
+¦   ¦       +---data
+¦   ¦       ¦   ¦   Data.js
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---var
+¦   ¦       ¦           acceptData.js
+¦   ¦       ¦           dataPriv.js
+¦   ¦       ¦           dataUser.js
+¦   ¦       ¦           
+¦   ¦       +---deferred
+¦   ¦       ¦       exceptionHook.js
+¦   ¦       ¦       
+¦   ¦       +---deprecated
+¦   ¦       ¦       ajax-event-alias.js
+¦   ¦       ¦       event.js
+¦   ¦       ¦       
+¦   ¦       +---effects
+¦   ¦       ¦       animatedSelector.js
+¦   ¦       ¦       Tween.js
+¦   ¦       ¦       
+¦   ¦       +---event
+¦   ¦       ¦       trigger.js
+¦   ¦       ¦       
+¦   ¦       +---exports
+¦   ¦       ¦       amd.js
+¦   ¦       ¦       global.js
+¦   ¦       ¦       
+¦   ¦       +---manipulation
+¦   ¦       ¦   ¦   buildFragment.js
+¦   ¦       ¦   ¦   getAll.js
+¦   ¦       ¦   ¦   setGlobalEval.js
+¦   ¦       ¦   ¦   support.js
+¦   ¦       ¦   ¦   wrapMap.js
+¦   ¦       ¦   ¦   _evalUrl.js
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---var
+¦   ¦       ¦           rscriptType.js
+¦   ¦       ¦           rtagName.js
+¦   ¦       ¦           
+¦   ¦       +---queue
+¦   ¦       ¦       delay.js
+¦   ¦       ¦       
+¦   ¦       +---selector
+¦   ¦       ¦       contains.js
+¦   ¦       ¦       escapeSelector.js
+¦   ¦       ¦       
+¦   ¦       +---traversing
+¦   ¦       ¦   ¦   findFilter.js
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---var
+¦   ¦       ¦           dir.js
+¦   ¦       ¦           rneedsContext.js
+¦   ¦       ¦           siblings.js
+¦   ¦       ¦           
+¦   ¦       L---var
+¦   ¦               arr.js
+¦   ¦               class2type.js
+¦   ¦               document.js
+¦   ¦               documentElement.js
+¦   ¦               flat.js
+¦   ¦               fnToString.js
+¦   ¦               getProto.js
+¦   ¦               hasOwn.js
+¦   ¦               indexOf.js
+¦   ¦               isFunction.js
+¦   ¦               isWindow.js
+¦   ¦               ObjectFunctionString.js
+¦   ¦               pnum.js
+¦   ¦               pop.js
+¦   ¦               push.js
+¦   ¦               rcheckableType.js
+¦   ¦               rcssNum.js
+¦   ¦               rnothtmlwhite.js
+¦   ¦               rtrimCSS.js
+¦   ¦               slice.js
+¦   ¦               sort.js
+¦   ¦               splice.js
+¦   ¦               support.js
+¦   ¦               toString.js
+¦   ¦               whitespace.js
+¦   ¦               
+¦   +---motion-ui
+¦   ¦   ¦   .browserslistrc
+¦   ¦   ¦   .scss-lint.yml
+¦   ¦   ¦   bower.json
+¦   ¦   ¦   CHANGELOG.md
+¦   ¦   ¦   composer.json
+¦   ¦   ¦   gulpfile.js
+¦   ¦   ¦   LICENSE
+¦   ¦   ¦   motion-ui.js
+¦   ¦   ¦   motion-ui.scss
+¦   ¦   ¦   package.js
+¦   ¦   ¦   package.json
+¦   ¦   ¦   README.md
+¦   ¦   ¦   
+¦   ¦   +---dist
+¦   ¦   ¦       motion-ui.css
+¦   ¦   ¦       motion-ui.js
+¦   ¦   ¦       motion-ui.min.css
+¦   ¦   ¦       motion-ui.min.js
+¦   ¦   ¦       
+¦   ¦   +---docs
+¦   ¦   ¦       animations.md
+¦   ¦   ¦       classes.md
+¦   ¦   ¦       configuration.md
+¦   ¦   ¦       installation.md
+¦   ¦   ¦       javascript.md
+¦   ¦   ¦       readme.md
+¦   ¦   ¦       transitions.md
+¦   ¦   ¦       wow.md
+¦   ¦   ¦       
+¦   ¦   +---lib
+¦   ¦   ¦       handlebars.js
+¦   ¦   ¦       
+¦   ¦   L---src
+¦   ¦       ¦   motion-ui.scss
+¦   ¦       ¦   _classes.scss
+¦   ¦       ¦   _settings.scss
+¦   ¦       ¦   
+¦   ¦       +---effects
+¦   ¦       ¦       _fade.scss
+¦   ¦       ¦       _hinge.scss
+¦   ¦       ¦       _shake.scss
+¦   ¦       ¦       _slide.scss
+¦   ¦       ¦       _spin.scss
+¦   ¦       ¦       _wiggle.scss
+¦   ¦       ¦       _zoom.scss
+¦   ¦       ¦       
+¦   ¦       +---transitions
+¦   ¦       ¦       _fade.scss
+¦   ¦       ¦       _hinge.scss
+¦   ¦       ¦       _slide.scss
+¦   ¦       ¦       _spin.scss
+¦   ¦       ¦       _zoom.scss
+¦   ¦       ¦       
+¦   ¦       L---util
+¦   ¦               _animation.scss
+¦   ¦               _args.scss
+¦   ¦               _function.scss
+¦   ¦               _keyframe.scss
+¦   ¦               _selector.scss
+¦   ¦               _series.scss
+¦   ¦               _string.scss
+¦   ¦               _transition.scss
+¦   ¦               _unit.scss
+¦   ¦               
+¦   L---what-input
+¦       ¦   .browserslistrc
+¦       ¦   .editorconfig
+¦       ¦   .eslintrc
+¦       ¦   .nvmrc
+¦       ¦   .prettierrc
+¦       ¦   .stylelintrc
+¦       ¦   Gulpfile.js
+¦       ¦   LICENSE
+¦       ¦   package.json
+¦       ¦   README.md
+¦       ¦   
+¦       +---dist
+¦       ¦       what-input.js
+¦       ¦       what-input.min.js
+¦       ¦       what-input.min.js.map
+¦       ¦       
+¦       L---src
+¦           +---images
+¦           ¦       select-arrow.svg
+¦           ¦       
+¦           +---markup
+¦           ¦       index.html
+¦           ¦       
+¦           +---scripts
+¦           ¦       what-input.d.ts
+¦           ¦       what-input.js
+¦           ¦       
+¦           L---styles
+¦                   index.scss
+¦                   _html.scss
+¦                   _layout.scss
+¦                   _mixins.scss
+¦                   _variables.scss
+¦                   
+L---static
+    +---favicon
+    ¦       11favicon.ico
+    ¦       dave-removebg-preview.png
+    ¦       favicon.ico
+    ¦       
+    +---foundation
+    ¦   +---css
+    ¦   ¦       foundation.css
+    ¦   ¦       foundation.min.css
+    ¦   ¦       
+    ¦   +---jquery
+    ¦   ¦   ¦   AUTHORS.txt
+    ¦   ¦   ¦   bower.json
+    ¦   ¦   ¦   jquery-2.1.4.min.js
+    ¦   ¦   ¦   LICENSE.txt
+    ¦   ¦   ¦   package.json
+    ¦   ¦   ¦   README.md
+    ¦   ¦   ¦   
+    ¦   ¦   +---dist
+    ¦   ¦   ¦       jquery.js
+    ¦   ¦   ¦       jquery.min.js
+    ¦   ¦   ¦       jquery.min.map
+    ¦   ¦   ¦       jquery.slim.js
+    ¦   ¦   ¦       jquery.slim.min.js
+    ¦   ¦   ¦       jquery.slim.min.map
+    ¦   ¦   ¦       
+    ¦   ¦   L---src
+    ¦   ¦       ¦   ajax.js
+    ¦   ¦       ¦   attributes.js
+    ¦   ¦       ¦   callbacks.js
+    ¦   ¦       ¦   core.js
+    ¦   ¦       ¦   css.js
+    ¦   ¦       ¦   data.js
+    ¦   ¦       ¦   deferred.js
+    ¦   ¦       ¦   deprecated.js
+    ¦   ¦       ¦   dimensions.js
+    ¦   ¦       ¦   effects.js
+    ¦   ¦       ¦   event.js
+    ¦   ¦       ¦   jquery.js
+    ¦   ¦       ¦   manipulation.js
+    ¦   ¦       ¦   offset.js
+    ¦   ¦       ¦   queue.js
+    ¦   ¦       ¦   selector-native.js
+    ¦   ¦       ¦   selector.js
+    ¦   ¦       ¦   serialize.js
+    ¦   ¦       ¦   traversing.js
+    ¦   ¦       ¦   wrap.js
+    ¦   ¦       ¦   
+    ¦   ¦       +---ajax
+    ¦   ¦       ¦   ¦   jsonp.js
+    ¦   ¦       ¦   ¦   load.js
+    ¦   ¦       ¦   ¦   script.js
+    ¦   ¦       ¦   ¦   xhr.js
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   L---var
+    ¦   ¦       ¦           location.js
+    ¦   ¦       ¦           nonce.js
+    ¦   ¦       ¦           rquery.js
+    ¦   ¦       ¦           
+    ¦   ¦       +---attributes
+    ¦   ¦       ¦       attr.js
+    ¦   ¦       ¦       classes.js
+    ¦   ¦       ¦       prop.js
+    ¦   ¦       ¦       support.js
+    ¦   ¦       ¦       val.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---core
+    ¦   ¦       ¦   ¦   access.js
+    ¦   ¦       ¦   ¦   camelCase.js
+    ¦   ¦       ¦   ¦   DOMEval.js
+    ¦   ¦       ¦   ¦   init.js
+    ¦   ¦       ¦   ¦   isAttached.js
+    ¦   ¦       ¦   ¦   nodeName.js
+    ¦   ¦       ¦   ¦   parseHTML.js
+    ¦   ¦       ¦   ¦   parseXML.js
+    ¦   ¦       ¦   ¦   ready-no-deferred.js
+    ¦   ¦       ¦   ¦   ready.js
+    ¦   ¦       ¦   ¦   readyException.js
+    ¦   ¦       ¦   ¦   stripAndCollapse.js
+    ¦   ¦       ¦   ¦   support.js
+    ¦   ¦       ¦   ¦   toType.js
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   L---var
+    ¦   ¦       ¦           rhtml.js
+    ¦   ¦       ¦           rsingleTag.js
+    ¦   ¦       ¦           
+    ¦   ¦       +---css
+    ¦   ¦       ¦   ¦   addGetHookIf.js
+    ¦   ¦       ¦   ¦   adjustCSS.js
+    ¦   ¦       ¦   ¦   curCSS.js
+    ¦   ¦       ¦   ¦   finalPropName.js
+    ¦   ¦       ¦   ¦   hiddenVisibleSelectors.js
+    ¦   ¦       ¦   ¦   showHide.js
+    ¦   ¦       ¦   ¦   support.js
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   L---var
+    ¦   ¦       ¦           cssExpand.js
+    ¦   ¦       ¦           getStyles.js
+    ¦   ¦       ¦           isHiddenWithinTree.js
+    ¦   ¦       ¦           rboxStyle.js
+    ¦   ¦       ¦           rcustomProp.js
+    ¦   ¦       ¦           rnumnonpx.js
+    ¦   ¦       ¦           swap.js
+    ¦   ¦       ¦           
+    ¦   ¦       +---data
+    ¦   ¦       ¦   ¦   Data.js
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   L---var
+    ¦   ¦       ¦           acceptData.js
+    ¦   ¦       ¦           dataPriv.js
+    ¦   ¦       ¦           dataUser.js
+    ¦   ¦       ¦           
+    ¦   ¦       +---deferred
+    ¦   ¦       ¦       exceptionHook.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---deprecated
+    ¦   ¦       ¦       ajax-event-alias.js
+    ¦   ¦       ¦       event.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---effects
+    ¦   ¦       ¦       animatedSelector.js
+    ¦   ¦       ¦       Tween.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---event
+    ¦   ¦       ¦       trigger.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---exports
+    ¦   ¦       ¦       amd.js
+    ¦   ¦       ¦       global.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---manipulation
+    ¦   ¦       ¦   ¦   buildFragment.js
+    ¦   ¦       ¦   ¦   getAll.js
+    ¦   ¦       ¦   ¦   setGlobalEval.js
+    ¦   ¦       ¦   ¦   support.js
+    ¦   ¦       ¦   ¦   wrapMap.js
+    ¦   ¦       ¦   ¦   _evalUrl.js
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   L---var
+    ¦   ¦       ¦           rscriptType.js
+    ¦   ¦       ¦           rtagName.js
+    ¦   ¦       ¦           
+    ¦   ¦       +---queue
+    ¦   ¦       ¦       delay.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---selector
+    ¦   ¦       ¦       contains.js
+    ¦   ¦       ¦       escapeSelector.js
+    ¦   ¦       ¦       
+    ¦   ¦       +---traversing
+    ¦   ¦       ¦   ¦   findFilter.js
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   L---var
+    ¦   ¦       ¦           dir.js
+    ¦   ¦       ¦           rneedsContext.js
+    ¦   ¦       ¦           siblings.js
+    ¦   ¦       ¦           
+    ¦   ¦       L---var
+    ¦   ¦               arr.js
+    ¦   ¦               class2type.js
+    ¦   ¦               document.js
+    ¦   ¦               documentElement.js
+    ¦   ¦               flat.js
+    ¦   ¦               fnToString.js
+    ¦   ¦               getProto.js
+    ¦   ¦               hasOwn.js
+    ¦   ¦               indexOf.js
+    ¦   ¦               isFunction.js
+    ¦   ¦               isWindow.js
+    ¦   ¦               ObjectFunctionString.js
+    ¦   ¦               pnum.js
+    ¦   ¦               pop.js
+    ¦   ¦               push.js
+    ¦   ¦               rcheckableType.js
+    ¦   ¦               rcssNum.js
+    ¦   ¦               rnothtmlwhite.js
+    ¦   ¦               rtrimCSS.js
+    ¦   ¦               slice.js
+    ¦   ¦               sort.js
+    ¦   ¦               splice.js
+    ¦   ¦               support.js
+    ¦   ¦               toString.js
+    ¦   ¦               whitespace.js
+    ¦   ¦               
+    ¦   L---js
+    ¦           foundation.js
+    ¦           foundation.min.js
+    ¦           
+    +---images
+    ¦       nft-400.png
+    ¦       
+    L---logo
+            2icon-57x57.png
+            ailogo.png
+            icon-57x57.png
+            

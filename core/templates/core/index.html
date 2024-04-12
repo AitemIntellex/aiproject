@@ -1,4 +1,3 @@
-{% load static %}
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -6,10 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AiPRO | Futures</title>
-    <link rel="stylesheet" href="{% static 'foundation/css/foundation.min.css' %}">
-    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
-    <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
-
+    <link rel="stylesheet" href="node_modules/foundation-sites/dist/css/foundation.min.css">
 </head>
 
 <body>
@@ -24,13 +20,16 @@
         <div class="top-bar-left">
             <ul class="menu" data-responsive-menu="accordion">
                 <li class="menu-text">AiProduction</li>
-
                 <li><a href="#">One</a></li>
                 <li><a href="#">Two</a></li>
                 <li><a href="#">Three</a></li>
             </ul>
         </div>
         <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#">My Account</a></li>
+                <li><a class="button">Login</a></li>
+            </ul>
         </div>
     </div>
     <!-- /Navigation -->
@@ -44,11 +43,12 @@
             <p class="subheader">There is beauty in space, and it is orderly. There is no weather, and there is
                 regularity. It is predictable. Everything in space obeys the laws of physics. If you know these laws,
                 and obey them, space will treat you kindly.</p>
-
+            <button class="button">Take a Tour</button>
+            <button class="button">Start a trial</button>
         </div>
 
         <div class="show-for-large large-3 columns">
-            <img src="{% static 'logo/ailogo.png' %}" alt="Aitem Intellex">
+            <img src="https://placehold.it/400x370&text=PSR1257 + 12 C" alt="picture of space">
         </div>
 
         <div class="medium-5 large-3 columns">
@@ -84,54 +84,53 @@
     <div class="row small-up-1 medium-up-2 large-up-3">
         <div class="column">
             <div class="callout">
-                <p>NFT5</p>
-                <p><img src="{% static 'images/nft-400.png' %}" alt="NFT"></p>
+                <p>About us</p>
+                <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+                <p class="lead">Copernican Revolution caused an uproar</p>
+                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="callout">
+                <p>Pegasi B</p>
+                <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+                <p class="lead">Copernican Revolution caused an uproar</p>
+                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="callout">
+                <p>Pegasi B</p>
+                <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+                <p class="lead">Copernican Revolution caused an uproar</p>
+                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="callout">
+                <p>Pegasi B</p>
+                <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+                <p class="lead">Copernican Revolution caused an uproar</p>
+                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="callout">
+                <p>Pegasi B</p>
+                <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+                <p class="lead">Copernican Revolution caused an uproar</p>
+                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="callout">
+                <p>Pegasi B</p>
+                <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
                 <p class="lead">Copernican Revolution caused an uproar</p>
                 <p class="subheader">Find Earth-like planets life outside the Solar System</p>
             </div>
         </div>
 
-        <div class="column">
-            <div class="callout">
-                <p>NFT2</p>
-                <p><img src="{% static 'images/nft-400.png' %}" alt="NFT"></p>
-                <p class="lead">Copernican Revolution caused an uproar</p>
-                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="callout">
-                <p>NFT3</p>
-                <p><img src="{% static 'images/nft-400.png' %}" alt="NFT"></p>
-                <p class="lead">Copernican Revolution caused an uproar</p>
-                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="callout">
-                <p>NFT4</p>
-                <p><img src="{% static 'images/nft-400.png' %}" alt="NFT"></p>
-                <p class="lead">Copernican Revolution caused an uproar</p>
-                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="callout">
-                <p>NFT5</p>
-                <p><img src="{% static 'images/nft-400.png' %}" alt="NFT"></p>
-                <p class="lead">Copernican Revolution caused an uproar</p>
-                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="callout">
-                <p>NFT2</p>
-                <p><img src="{% static 'images/nft-400.png' %}" alt="NFT"></p>
-                <p class="lead">Copernican Revolution caused an uproar</p>
-                <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-        </div>
     </div>
 
     <div class="row column">
@@ -201,8 +200,8 @@
 
     </footer>
 
-    <script src="{% static 'foundation/jquery/jquery-2.1.4.min.js' %}"></script>
-    <script src="{% static 'foundation/js/foundation.min.js' %}"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
     <script>
         $(document).foundation();
     </script>
